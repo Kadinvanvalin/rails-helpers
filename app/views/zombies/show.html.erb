@@ -1,4 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<% if @zombie.name %>
+  <h2><%= @zombie.name %></h2>
+<% end %>
+<p>converted <%= time_ago_in_words(@zombie.created_at) %>  ago</p>
 <%= link_to 'Edit', edit_zombie_path(@zombie) %> |
 <%= link_to 'Back', zombies_path %>
+

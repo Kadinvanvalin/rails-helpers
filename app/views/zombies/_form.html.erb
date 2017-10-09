@@ -11,7 +11,12 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+
+
+<form action='/zombie' method='post'>
+    <label>Name:</label>
+    <input type="text" name="zombie[name]"><br/>
+    <input type="submit" name="Submit">
+  </form>
+
 <% end %>

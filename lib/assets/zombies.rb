@@ -6,5 +6,4 @@
 
     <%end %>
 
-#zombie controller #zombie_params
-params.require(:zombie).permit(:name)
+

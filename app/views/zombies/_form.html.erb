@@ -12,11 +12,10 @@
   <% end %>
 
 
-
-<form action='/zombie' method='post'>
-    <label>Name:</label>
-    <input type="text" name="zombie[name]"><br/>
-    <input type="submit" name="Submit">
-  </form>
+ <%=form_for @zombie do |f| %>
+    <%=f.label :name, "Name:" %>
+    <%=f.text_field :name, size: 15 %>
+     <%=f.submit %>
+  <%end %>
 
 <% end %>

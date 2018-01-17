@@ -3,6 +3,9 @@
   <h2><%= @zombie.name %></h2>
 <% end %>
 <p>converted <%= time_ago_in_words(@zombie.created_at) %>  ago</p>
+
+<%= image_tag("zombie.png", alt:"nice zombie") %>
+
 <%= link_to 'Edit', edit_zombie_path(@zombie) %> |
 <%= link_to 'Back', zombies_path %>
 

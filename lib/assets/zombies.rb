@@ -7,3 +7,4 @@
     <%end %>
 
 
+<%=image_tag("zombie.png")%>

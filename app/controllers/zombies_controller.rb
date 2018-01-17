@@ -1,4 +1,4 @@
-class ZombiesController < ApplicationController
+  class ZombiesController < ApplicationController
   before_action :set_zombie, only: [:show, :edit, :update, :destroy]
 
   # GET /zombies
